@@ -19,7 +19,7 @@
         function verificar() {
             var txtpais = window.document.querySelector('input#txtpais')
             var resposta = window.document.querySelector('div#res')
-            var pais = String(txtpais)
+            var pais = String(txtpais.value)
 
             if (pais == 'Brasil'){
                 resposta.innerHTML = (`<p>Você nasceu em ${pais}, então você é brasileiro!</p>`)
